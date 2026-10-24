@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+*.zip
+# Personal job-search data must stay outside this repository
+profile.md
+jobs.jsonl
+jobs.jsonl.lock/
+applications.jsonl
+.env
+.env.*
