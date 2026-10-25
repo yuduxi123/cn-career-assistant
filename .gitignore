@@ -1,12 +1,16 @@
-__pycache__/
-*.py[cod]
 .DS_Store
+__pycache__/
+*.pyc
+.env*
+!.env.example
+api_key.txt
+config.yaml
+profile.yaml
+data/
+workspace/
+applications/
+resumes/
+*.pdf
+*.docx
+*.bak*
 .venv/
-*.zip
-# Personal job-search data must stay outside this repository
-profile.md
-jobs.jsonl
-jobs.jsonl.lock/
-applications.jsonl
-.env
-.env.*

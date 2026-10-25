@@ -1,6 +1,6 @@
 # 国内求职助手 · cn-career-assistant
 
-版本：1.1.0。适用于支持 `SKILL.md` 的 AI 助手。帮助 AI 助手搜索国内公司招聘官网和招聘平台、区分日常实习/暑期实习/校招、核验资格、结合简历匹配，以及在用户授权后辅助填写申请。
+版本：1.2.0。适用于支持 `SKILL.md` 的 AI 助手。帮助 AI 助手搜索国内公司招聘官网和招聘平台、区分日常实习/暑期实习/校招、核验资格、结合简历匹配，以及在用户授权后辅助填写申请。
 
 ## 安装
 
@@ -96,3 +96,13 @@ python3 -m unittest discover -s tests -v
 ```
 
 当前包含 7 项测试，验证本地岗位存储与安装行为。CI 在 Linux、macOS、Windows 运行测试；通过测试不表示招聘网站已完成适配。
+
+## 1.2 改进
+
+新增可执行的资格证据分级检查，硬条件未知不再混同不满足；补充动态列表覆盖范围、岗位开放状态、首次发现/发布时间/审理日/截止日区别。[证据格式](references/evidence.md)与[开源调研](references/oss-review.md)可独立阅读。
+
+```bash
+python3 scripts/match_evidence.py /path/to/evidence.json
+```
+
+返回A/B/C及硬条件冲突、未知项；这不是录用概率，也不代替真实材料核验。
