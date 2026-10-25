@@ -1,5 +1,7 @@
 # 国内求职助手 · cn-career-assistant
 
+[项目导航](https://github.com/yuduxi123) · [来源与致谢](ATTRIBUTION.md)
+
 版本：1.2.0。适用于支持 `SKILL.md` 的 AI 助手。帮助 AI 助手搜索国内公司招聘官网和招聘平台、区分日常实习/暑期实习/校招、核验资格、结合简历匹配，以及在用户授权后辅助填写申请。
 
 ## 安装
